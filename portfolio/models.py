@@ -13,5 +13,5 @@ class Project(models.Model):  # inheriting model class
     url = models.URLField(blank=True)
     # that if a field can be (empty or not) or (mandatory or not)
 
-
- 
+    def __str__(self):
+        return self.title
